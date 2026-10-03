@@ -32,7 +32,7 @@
 <body>
   <h1>Privacy Policy</h1>
   <p class="sub">DoseKeeper — Medication Reminder</p>
-  <p><strong>Last updated: September 25, 2026</strong></p>
+  <p><strong>Last updated: October 2, 2026</strong></p>
 
   <div class="badge">DoseKeeper collects no data. None.</div>
 
@@ -64,20 +64,27 @@
     The core app works fully offline and does not request internet access for its reminder,
     scheduling, history, or export features. Everything in DoseKeeper is free. If you choose to
     leave an optional tip (Settings → Donate), Google Play handles the purchase under Google's own
-    privacy policy; we never see your payment details, and the app keeps no record of it. A tip
+    privacy policy; we never see your payment details, and the app keeps no record of the payment. A tip
     unlocks nothing, and the app never asks.
+  </p>
+  <p>
+    Google's billing library, which the tip jar uses, includes a diagnostics component that would send anonymous billing diagnostics to Google. DoseKeeper has no internet permission, so Android blocks it and nothing is sent. While a tip you started is still being finished, DoseKeeper keeps a small marker on your device so it can complete the tip the next time you open it; it never records what you paid.
   </p>
 
   <h2>Permissions, in plain terms</h2>
   <ul>
-    <li><strong>Exact alarms / full-screen alerts</strong> — so a dose reminder fires at the exact
-      time you set and can wake the screen, even if the phone has been idle. Used only for the
+    <li><strong>Alarms &amp; reminders</strong> (exact alarms, which you allow in the app) — so a dose
+      reminder fires at the exact time you set, even if the phone has been idle. Used only for the
       reminders you schedule.</li>
+    <li><strong>Full-screen alerts</strong> — so a ringing dose can show over the lock screen until you
+      answer it.</li>
+    <li><strong>Foreground service, vibrate and keep awake</strong> — so the reminder keeps ringing
+      and vibrating, with the screen off, until you mark the dose taken, snoozed or skipped.</li>
     <li><strong>Notifications</strong> — to show the reminder itself and its Taken/Snooze/Skip
       actions.</li>
     <li><strong>Boot / time-change receivers</strong> — to re-arm your reminders after a restart or
       a clock change. No data leaves the device to do this.</li>
-    <li><strong>Google Play billing</strong> — only to take an optional tip, if you choose to leave one.
+    <li><strong>Google Play billing</strong> (and <strong>view network connections</strong>, which Google's billing library adds) — only to take an optional tip, if you choose to leave one.
       Google Play handles the payment; the app receives no payment details.</li>
   </ul>
   <p>None of these permissions are used to collect or transmit information about you.</p>
